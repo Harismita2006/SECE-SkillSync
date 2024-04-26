@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIA 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.29.0/dist/apexcharts.min.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background: white;
+        }
+
+        .chart-container {
+            margin-top: 30px;
+        }
+        body{
+            background-image: url("./WhatsApp\ Image\ 2024-04-24\ at\ 13.56.09_21d82bf5.jpg");
+  background-position: center;
+    background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CIA 1</h1>
+        <div id="chartContainer" class="chart-container">
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.29.0/dist/apexcharts.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            const studentData = [
+                { name: "CP", score: 50 },
+                { name: "LINEAR ALGEBRA", score: 80 },
+                { name: "C++", score: 70 },
+                { name: "DS", score: 60 },
+                { name: "PYTHON", score: 90 }
+            ];
+
+            
+            const studentNames = studentData.map(student => student.name);
+            const studentScores = studentData.map(student => student.score);
+
+            
+            var options = {
+                chart: {
+                    type: 'bar'
+                },
+                series: [{
+                    name: 'Marks',
+                    data: studentScores
+                }],
+                xaxis: {
+                    categories: studentNames
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chartContainer"), options);
+            chart.render();
+        });
+    </script>
+</body>
+</html>

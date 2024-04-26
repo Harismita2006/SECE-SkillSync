@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.ENZ08qwjh32ezN4tomHqWwHaEL&pid=Api&P=0&h=180'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+header {
+  background-color: #2b4570;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#responseContainer {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}

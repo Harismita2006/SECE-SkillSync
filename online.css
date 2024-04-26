@@ -1,0 +1,60 @@
+body {
+    background-image: url("./WhatsApp Image 2024-04-24 at 13.56.09_21d82bf5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.platform {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.platform:hover {
+    transform: translateY(-10px);
+}
+
+.platform img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.platform h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.home-button {
+    display: block;
+    width: 100px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}

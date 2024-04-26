@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url("./WhatsApp\ Image\ 2024-04-24\ at\ 13.56.09_21d82bf5.jpg");
+  background-position: center;
+  background-size: cover;
+  color:black; 
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #fff; 
+  border-radius: 10px;
+}
+
+.profile-header h1 {
+  text-align: center;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin-top: 0;
+}
+
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-info ul li {
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-picture img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.profile-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#edit-profile-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: 1px solid #fff; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button {
+  position: fixed;
+  left: 20px; 
+  bottom: 20px; 
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+
+

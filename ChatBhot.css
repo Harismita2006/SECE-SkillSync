@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #eff1f4, #dbe7f0);
+  }
+  
+  .glassmorphism-container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glassmorphism-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .glassmorphism-header h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+  }
+  
+  .glassmorphism-chatbox {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  
+  .glassmorphism-chatbox div {
+    margin-bottom: 10px;
+  }
+  
+  .glassmorphism-chatbox .user {
+    color: #2d65ff;
+  }
+  
+  .glassmorphism-chatbox .chatbot {
+    color: #00b894;
+  }
+  
+  .glassmorphism-input-container {
+    display: flex;
+  }
+  
+  .glassmorphism-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #4a4a4a;
+    margin-right: 10px;
+  }
+  
+  .glassmorphism-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2d65ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .glassmorphism-button:hover {
+    background: #2653e3;
+  }
+  

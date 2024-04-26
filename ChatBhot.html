@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Training Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image:url("./WhatsApp\ Image\ 2024-04-24\ at\ 13.56.09_21d82bf5.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-position: center;
+    background-size: cover;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 300px;
+    }
+    #chatbox {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+    }
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #000;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: rgba(0, 123, 255, 0.7);
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: rgba(0, 123, 255, 1);
+    }
+    .user-icon, .chatbot-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #000(255, 255, 255, 0.7);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div id="chatbox">
+    </div>
+    <input type="text" id="userInput" placeholder="Ask me anything...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var userInput = document.getElementById("userInput").value;
+      displayMessage("user", userInput);
+      respondToUser(userInput);
+      document.getElementById("userInput").value = "";
+    }
+
+    function displayMessage(sender, message) {
+      var chatbox = document.getElementById("chatbox");
+      var messageElement = document.createElement("div");
+      messageElement.textContent = message;
+      var icon = document.createElement("i");
+      icon.classList.add(sender + "-icon", "fas");
+      icon.classList.add(sender === "user" ? "fa-user" : "fa-robot");
+      messageElement.insertBefore(icon, messageElement.firstChild);
+      chatbox.appendChild(messageElement);
+    }
+
+    function respondToUser(userInput) {
+      var response;
+      if (userInput.includes("courses")) {
+        response = "Our platform offers a wide range of courses in various subjects.";
+      } else if (userInput.includes("study tips")) {
+        response = "Here are some study tips: 1. Create a study schedule. 2. Take regular breaks. 3. Use active learning techniques.";
+      } else {
+        response = "I'm sorry, I'm not sure how to help with that. Please try asking a different question.";
+      }
+      displayMessage("chatbot", response);
+    }
+  </script>
+</body>
+</html>
